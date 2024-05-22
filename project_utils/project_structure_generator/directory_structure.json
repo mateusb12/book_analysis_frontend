@@ -1,0 +1,38 @@
+[
+    "App.css",
+    "App.js",
+    "App.test.js",
+    {
+        "components": [
+            "Banner.js",
+            "Contact.js",
+            "Footer.js",
+            "FullLayout.js",
+            "MailchimpForm.js",
+            "NavBar.js",
+            "Newsletter.js",
+            "ProjectCard.js",
+            "Projects.js",
+            "Skills.js"
+        ]
+    },
+    {
+        "css": [
+            "NavBar.css",
+            "Projects.css"
+        ]
+    },
+    {
+        "data": [
+            "banner.json",
+            "navbar.json",
+            "projects.json",
+            "skills.json"
+        ]
+    },
+    "index.css",
+    "index.js",
+    "logo.svg",
+    "reportWebVitals.js",
+    "setupTests.js"
+]
