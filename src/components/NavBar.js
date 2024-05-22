@@ -1,5 +1,6 @@
-import {Navbar} from "react-bootstrap";
-import {useEffect, useState} from "react";
+import '../css/NavBar.css';
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { useEffect, useState } from "react";
 
 export const NavBar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -11,7 +12,7 @@ export const NavBar = () => {
             } else {
                 setScrolled(false);
             }
-        }
+        };
 
         window.addEventListener("scroll", onScroll);
 
@@ -20,6 +21,14 @@ export const NavBar = () => {
 
     return (
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+            <Container>
+                <Navbar.Brand href="#/">Toggle</Navbar.Brand>
+                <Navbar.Collapse id="navbar-side-buttons">
+                    <Navbar.Brand href="#/skills">Home</Navbar.Brand>
+                    <Navbar.Brand href="#/projects">Examples</Navbar.Brand>
+                    <Navbar.Brand href="#/connect">Try it out</Navbar.Brand>
+                </Navbar.Collapse>
+            </Container>
         </Navbar>
-    )
-}
+    );
+};
