@@ -23,8 +23,8 @@ export const NavBar = () => {
     return (
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#/">
-                    Aaaaa
+                <Navbar.Brand href="#/" id="dark-mode">
+                    <DarkMode/>
                 </Navbar.Brand>
                 <Navbar.Collapse id="navbar-side-buttons">
                     <Navbar.Brand href="#/skills">Home</Navbar.Brand>
