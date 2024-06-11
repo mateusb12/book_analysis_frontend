@@ -4,14 +4,18 @@ import {Route, Routes} from "react-router-dom";
 import {NavBar} from "./components/NavBar";
 import {Welcome} from "./components/Welcome";
 import DarkMode from "./components/DarkMode";
+import {RawNavBar} from "./components/RawNavBar";
+
+const BASE_PATH = "/book_analysis_frontend";
 
 function App() {
     return (
         <div className="App">
             <Routes>
-                <Route path="/book_analysis_frontend/" element={<Welcome/>}/>
-                <Route path="/book_analysis_frontend/navbar" element={<NavBar/>}/>
-                <Route path="/book_analysis_frontend/darkmode" element={<DarkMode/>}/>
+                <Route path={`${BASE_PATH}/`} element={<Welcome/>}/>
+                <Route path={`${BASE_PATH}/navbar`} element={<NavBar/>}/>
+                <Route path={`${BASE_PATH}/darkmode`} element={<DarkMode/>}/>
+                <Route path={`${BASE_PATH}/rawnavbar`} element={<RawNavBar/>}/>
             </Routes>
         </div>
     );

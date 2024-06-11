@@ -42,11 +42,7 @@
     font-size: var(--font-size);
 }
 
-.navbar-brand:not(#dark-mode):hover {
-    border-color: var(--hover-color);
-}
-
-#dark-mode:hover #dark-mode-label {
+.navbar-brand:hover {
     border-color: var(--hover-color);
 }
 
