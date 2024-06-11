@@ -33,33 +33,22 @@
     background-color: var(--navbar-bg);
 }
 
-.side-buttons-container{
+.navbar-brand{
     padding: 0.9rem 1rem;
+    text-decoration: none;
     color: var(--navbar-text);
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
     font-size: var(--font-size);
+}
+
+.navbar-brand:hover {
+    border-color: var(--hover-color);
+}
+
+#navbar-side-buttons{
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 1rem;
-}
-
-.side-button{
-    text-decoration: none;
-    display: block;
-    padding: 1rem;
-}
-
-.side-button:hover{
-    color: var(--hover-color);
-    text-decoration: none;
-    border-style: solid;
-    border-color: var(--hover-color);;
-    border-width: 1px;
-}
-
-.side-button:visited{
-    text-decoration: none;
-    color: var(--hover-color);
 }
