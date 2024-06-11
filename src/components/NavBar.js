@@ -1,6 +1,7 @@
 import '../css/NavBar.css';
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useEffect, useState } from "react";
+import DarkMode from "./DarkMode";
 
 export const NavBar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -22,7 +23,9 @@ export const NavBar = () => {
     return (
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#/">Toggle</Navbar.Brand>
+                <Navbar.Brand href="#/">
+                    Aaaaa
+                </Navbar.Brand>
                 <Navbar.Collapse id="navbar-side-buttons">
                     <Navbar.Brand href="#/skills">Home</Navbar.Brand>
                     <Navbar.Brand href="#/projects">Examples</Navbar.Brand>
