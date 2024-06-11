@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'CentraNo2-Bold';
-    src: url('../fonts/CentraNo2-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/CentraNo2-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'CentraNo2-Book';
-    src: url('../fonts/CentraNo2-Book.ttf') format('truetype');
+    src: url('../assets/fonts/CentraNo2-Book.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'CentraNo2-Medium';
-    src: url('../fonts/CentraNo2-Medium.ttf') format('truetype');
+    src: url('../assets/fonts/CentraNo2-Medium.ttf') format('truetype');
 }
 
 :root {
-    --navbar-bg: rgba(0, 0, 0, 0.7);
+    --navbar-bg: rgba(0, 0, 0, 0.5);
     --navbar-text: white;
     --hover-color: rgba(255, 255, 255, .9);
     --font-size: 22px;
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 10rem;
+    padding-left: 1rem;
     gap: 75rem;
     background-color: var(--navbar-bg);
 }

@@ -1,0 +1,6 @@
+.welcome-background {
+    background-image: url('../assets/img/bulb-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #f5f5f5;
+}
