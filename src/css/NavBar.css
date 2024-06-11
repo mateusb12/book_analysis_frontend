@@ -49,14 +49,13 @@
     text-decoration: none;
     display: block;
     padding: 1rem;
+    border: 1px solid transparent;
 }
 
 .side-button:hover{
     color: var(--hover-color);
     text-decoration: none;
-    border-style: solid;
-    border-color: var(--hover-color);;
-    border-width: 1px;
+    border-color: var(--hover-color);
 }
 
 .side-button:visited{

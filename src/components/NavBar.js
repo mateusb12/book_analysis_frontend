@@ -1,11 +1,14 @@
 import '../css/NavBar.css';
 import {Container} from "react-bootstrap";
+import DarkMode from "./DarkMode";
 
 export const NavBar = () => {
     return (
         <nav>
             <Container>
-                <a href="#/" className="dark-mode">DarkMode</a>
+                <a href="#/" className="dark-mode">
+                    <DarkMode/>
+                </a>
                 <div className="side-buttons-container">
                     <a href="#/" className="side-button">Home</a>
                     <a href="#/" className="side-button">Examples</a>
