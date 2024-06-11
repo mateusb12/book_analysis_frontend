@@ -11,7 +11,7 @@ export const Welcome = () => {
                 <Step
                     stepNumber="1"
                     stepTitle="Get a .txt book"
-                    imageUrl="url-to-your-image"
+                    imageUrl='../assets/img/book.png'
                 />
                 <Step
                     stepNumber="2"
