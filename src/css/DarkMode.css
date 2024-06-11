@@ -1,19 +1,19 @@
 :root {
     --hover-color: rgba(255, 255, 255, .9);
-    --main-width: 65px;
-    --icon-size: 25px;
+    --main-width: 100px;
+    --main-height: 35px;
+    --icon-size: calc(var(--main-height) - 5px);
     --icon-offset: 3px;
-    --label-height: 30px;
-    --left-checked: 62px;
+    --left-checked: calc(var(--main-width) - var(--icon-offset));
 }
 
 .dark_mode {
-    margin-top: calc(var(--label-height) * -0.8);
+    margin-top: calc(var(--main-height) * -0.8);
 }
 
 .dark_mode_label {
     width: var(--main-width);
-    height: var(--label-height);
+    height: var(--main-height);
     position: relative;
     display: block;
     background: #ebebeb;
@@ -48,7 +48,7 @@
     background: #242424;
 }
 .dark_mode_input:checked + .dark_mode_label:after {
-    left: 62px;
+    left: var(--left-checked);
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a);
 }
