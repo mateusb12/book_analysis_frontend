@@ -1,6 +1,35 @@
 .welcome-background {
     background-image: url('../assets/img/bulb-bg.jpg');
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     color: #f5f5f5;
+}
+
+.title{
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    padding: 1.75rem;
+}
+
+.step-image {
+}
+
+#step-image-1 {
+    width: 37.5rem;
+    height: 25rem;
+}
+
+#step-image-2 {
+}
+
+#step-image-3 {
+    width: 35rem;
+    height: 20rem;
+}
+
+#step-image-4 {
+    width: 35rem;
+    height: 20rem;
 }
