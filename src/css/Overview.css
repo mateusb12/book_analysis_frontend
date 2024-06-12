@@ -1,3 +1,10 @@
+:root{
+    --gradient-transparency: 0.5;
+    --gradient-bg-first-color: rgba(170, 54, 124, var(--gradient-transparency));
+    --gradient-bg-second-color: rgba(74, 47, 189, var(--gradient-transparency));
+    --gradient-background: linear-gradient(to right, var(--gradient-bg-first-color), var(--gradient-bg-second-color));
+}
+
 .welcome-background {
     background-image: url('../assets/img/bulb-bg.jpg');
     background-size: cover;
@@ -6,11 +13,13 @@
 }
 
 .title{
-    border-color: red;
+    border-color: white;
     border-width: 1px;
     border-style: solid;
     display: inline-block;
     padding: 1.75rem;
+    background: var(--gradient-background);
+    color: white;
 }
 
 .step-image {

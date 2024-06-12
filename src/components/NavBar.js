@@ -27,7 +27,7 @@ export const NavBar = () => {
                     <DarkMode/>
                 </a>
                 <div className="side-buttons-container">
-                    <a href="#/" className="side-button">Home</a>
+                    <a href="#/" className="side-button">Overview</a>
                     <a href="#/" className="side-button">Examples</a>
                     <a href="#/" className="side-button">Try it out</a>
                 </div>

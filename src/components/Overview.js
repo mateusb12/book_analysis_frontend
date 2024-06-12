@@ -1,12 +1,12 @@
 import React from 'react';
-import '../css/Welcome.css';
+import '../css/Overview.css';
 import bookImage from '../assets/img/book.png';
 import csvTable from '../assets/img/csv_table.png';
 import entitiesTable from '../assets/img/entities_table.png';
 import filteredTable from '../assets/img/filtered_table.png';
 import { NavBar } from "./NavBar";
 
-export const Welcome = () => {
+export const Overview = () => {
     return (
         <div className="welcome-background">
             <NavBar />
