@@ -15,6 +15,7 @@
 
 :root {
     --navbar-bg: rgba(0, 0, 0, 0.5);
+    --navbar-bg-scrolled: rgba(0, 0, 0, 0.8);
     --navbar-text: #e5ffff;
     --hover-color: rgba(255, 255, 255, .9);
     --font-size: 22px;
@@ -30,6 +31,11 @@ nav {
     width: 100%;
     z-index: 100;
     background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+    background-color: var(--navbar-bg-scrolled);
     transition: background-color 0.3s ease;
 }
 
