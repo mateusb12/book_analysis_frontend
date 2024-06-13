@@ -4,6 +4,7 @@ import DarkMode from "./DarkMode";
 import { useEffect, useState } from "react";
 
 export const NavBar = () => {
+    const urlSuffix = "book_analysis_frontend"; // Removed leading slash
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -23,13 +24,13 @@ export const NavBar = () => {
     return (
         <nav className={scrolled ? "scrolled" : ""}>
             <Container>
-                <a href="#/" className="dark-mode">
+                <a href={`/${urlSuffix}`} className="dark-mode">
                     <DarkMode/>
                 </a>
                 <div className="side-buttons-container">
-                    <a href="#/" className="side-button">Overview</a>
-                    <a href="#/" className="side-button">Examples</a>
-                    <a href="#/" className="side-button">Try it out</a>
+                    <a href={`/${urlSuffix}/overview`} className="side-button">Overview</a>
+                    <a href={`/${urlSuffix}`} className="side-button">Examples</a>
+                    <a href={`/${urlSuffix}`} className="side-button">Try it out</a>
                 </div>
             </Container>
         </nav>

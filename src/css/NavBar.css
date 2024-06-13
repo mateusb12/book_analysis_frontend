@@ -15,13 +15,22 @@
 
 :root {
     --navbar-bg: rgba(0, 0, 0, 0.5);
-    --navbar-text: white;
+    --navbar-text: #e5ffff;
     --hover-color: rgba(255, 255, 255, .9);
     --font-size: 22px;
     --card-margin: 1em;
     --font-family-bold: 'CentraNo2-Bold', sans-serif;
     --font-family-book: 'CentraNo2-Book', sans-serif;
     --font-family-medium: 'CentraNo2-Medium', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
 
 .container{
@@ -35,7 +44,6 @@
 
 .side-buttons-container{
     padding: 0.9rem 1rem;
-    color: var(--navbar-text);
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
     font-size: var(--font-size);
@@ -46,6 +54,7 @@
 }
 
 .side-button{
+    color: var(--navbar-text);
     text-decoration: none;
     display: block;
     padding: 1rem;
