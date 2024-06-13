@@ -8,7 +8,7 @@ const BASE_PATH = "/book_analysis_frontend";
 
 function App() {
     return (
-        <div className="App">
+        <div className="App app-background">
             <Routes>
                 <Route path={`${BASE_PATH}/overview`} element={<Overview/>}/>
                 <Route path={`${BASE_PATH}/darkmode`} element={<DarkMode/>}/>

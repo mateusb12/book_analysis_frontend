@@ -14,7 +14,7 @@
 }
 
 :root {
-    --navbar-bg: rgba(0, 0, 0, 0.5);
+    --navbar-bg: rgba(0, 0, 0, 0.75);
     --navbar-bg-scrolled: rgba(0, 0, 0, 0.8);
     --navbar-text: #e5ffff;
     --hover-color: rgba(255, 255, 255, .9);
@@ -30,7 +30,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: transparent;
+    background-color: var(--navbar-bg);
     transition: background-color 0.3s ease;
 }
 
@@ -76,14 +76,4 @@ nav.scrolled {
 .side-button:visited{
     text-decoration: none;
     color: var(--hover-color);
-}
-
-nav.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: background-color 0.3s ease;
-}
-
-nav {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
 }
