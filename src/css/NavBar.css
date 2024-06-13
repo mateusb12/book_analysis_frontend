@@ -15,14 +15,15 @@
 
 :root {
     --navbar-bg: rgba(0, 0, 0, 0.8);
-    --navbar-bg-scrolled: rgba(0, 0, 0, 0.3);
+    --navbar-bg-scrolled: rgba(0, 0, 0, 0.2);
     --navbar-text: #e5ffff;
     --hover-color: rgba(255, 255, 255, .9);
-    --font-size: 22px;
+    --font-size: 17px;
     --card-margin: 1em;
     --font-family-bold: 'CentraNo2-Bold', sans-serif;
     --font-family-book: 'CentraNo2-Book', sans-serif;
     --font-family-medium: 'CentraNo2-Medium', sans-serif;
+    --gap-scale: 75rem;
 }
 
 nav {
@@ -44,7 +45,7 @@ nav.scrolled {
     justify-content: center;
     align-items: center;
     padding-left: 1rem;
-    gap: 75rem;
+    gap: var(--gap-scale);
     background-color: var(--navbar-bg);
 }
 
@@ -76,4 +77,18 @@ nav.scrolled {
 .side-button:visited{
     text-decoration: none;
     color: var(--hover-color);
+}
+
+@media (max-width: 1600px) {
+    nav, nav.scrolled {
+        background-color: red;
+    }
+
+    :root {
+        --gap-scale: calc(75rem * (100vw / 1600));
+    }
+
+    .container{
+        gap: 0;
+    }
 }

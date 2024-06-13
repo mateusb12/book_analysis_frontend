@@ -4,7 +4,7 @@ import DarkMode from "./DarkMode";
 import { useEffect, useState } from "react";
 
 export const NavBar = () => {
-    const urlSuffix = "book_analysis_frontend"; // Removed leading slash
+    const urlSuffix = "book_analysis_frontend";
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
